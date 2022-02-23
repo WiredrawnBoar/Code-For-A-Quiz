@@ -1,0 +1,191 @@
+<html>
+<head>
+<title>Anime Quiz</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.11.0/sweetalert2.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.11.0/sweetalert2.all.min.js"></script>
+
+</head>
+
+<body style="background-color:black">
+    <div style="border:2px solid black;padding:30px; width:65%;border-radius:20px;background-color:white;box-shadow:10px 10px 10px white" id="anime_div_1">
+    <form>
+    <h2>
+    Question 1 - What is the image below:
+    <br>
+    <a target="_blank" href="https://static.wikia.nocookie.net/naruto/images/5/56/Sharingan_Triple.svg/revision/latest/scale-to-width-down/1200?cb=20091022225716">Click To View Image</a>
+    </h2>
+    <input type="radio" name="anime_quiz_Q1" id="OPT1_Q1"> Goofy Eyes<br>
+    <input type="radio"name="anime_quiz_Q1" id="OPT2_Q1"> Sharigan Eyes<br>
+    <input type="radio"name="anime_quiz_Q1" id="OPT3_Q1"> Red Tear<br>
+    </form>
+    <button style="background-color:white; color:black;padding:10px;width:20%;margin-left:40%;height:30px" onclick="anime_question_1()">Submit</button>
+    </div>
+
+    <div style="border:2px solid black;padding:30px; width:65%;border-radius:20px;background-color:white;box-shadow:10px 10px 10px white;display: none;" id="anime_div_2">
+        <form>
+        <h2>
+        Question 2 - What statement is true
+        </h2>
+        <input type="radio" name="anime_quiz_Q2" id="OPT1_Q2"> Attack On Titan had a crossover with the movie Free Guy<br>
+        <input type="radio"name="anime_quiz_Q2" id="OPT2_Q2"> Attack On Titan had a crossover with Grand Theft Auto V<br>
+        <input type="radio"name="anime_quiz_Q2" id="OPT3_Q2"> Attack On Titan had a crossover with Marvel's Avengers<br>
+        </form>
+        <button style="background-color:white; color:black;padding:10px;width:20%;margin-left:40%;height:30px" onclick="anime_question_2()">Submit</button>
+        </div>
+
+    <div style="border:2px solid black;padding:30px; width:65%;border-radius:20px;background-color:white;box-shadow:10px 10px 10px white;display: none;" id="anime_div_3">
+            <form>
+            <h2>
+            Question 3 - What changes happened to Kaneki when being tortured
+            </h2>
+            <input type="radio" name="anime_quiz_Q3" id="OPT1_Q3"> Kaneki hair's turned white while being tortured<br>
+            <input type="radio"name="anime_quiz_Q3" id="OPT2_Q3"> Kaneki went insane while being tortured<br>
+            <input type="radio"name="anime_quiz_Q3" id="OPT3_Q3"> Kaneki did not get tortured<br>
+            </form>
+            <button style="background-color:white; color:black;padding:10px;width:20%;margin-left:40%;height:30px" onclick="anime_question_3()">Submit</button>
+        </div>
+        <div style="border:2px solid black;padding:30px; width:65%;border-radius:20px;background-color:white;box-shadow:10px 10px 10px white;display: none;" id="anime_div_4">                
+                <form>
+                    <h2>
+                    Question 4 - The Manga Is Way Gorier Than The Anime
+                    </h2>
+                    <input type="radio" name="anime_quiz_Q4" id="OPT1_Q4"> The manga is way gorier than the anime<br>
+                    <input type="radio"name="anime_quiz_Q4" id="OPT2_Q4"> The anime is way gorier than the manga<br>
+                    <input type="radio"name="anime_quiz_Q4" id="OPT3_Q4"> They are equal in terms of gore<br>
+                    </form>
+                    <button style="background-color:white; color:black;padding:10px;width:20%;margin-left:40%;height:30px" onclick="anime_question_4()">Submit</button>
+        </div>
+
+        <div style="border:2px solid black;padding:30px; width:65%;border-radius:20px;background-color:white;box-shadow:10px 10px 10px white;display: none;" id="anime_div_5">                
+            <form>
+                <h2>
+                Question 5 (Last Question) - What is Naruto Uzumaki Catchphrase
+                </h2>
+                <input type="radio" name="anime_quiz_Q5" id="OPT1_Q5"> Oni-chan<br>
+                <input type="radio"name="anime_quiz_Q5" id="OPT2_Q5"> Dattebayo<br>
+                <input type="radio"name="anime_quiz_Q5" id="OPT3_Q5"> Aiko<br>
+                </form>
+                <button style="background-color:white; color:black;padding:10px;width:20%;margin-left:40%;height:30px" onclick="anime_question_5()">Submit</button>
+        </div>
+
+        <div style="border:2px solid black;padding:30px; width:65%;border-radius:20px;background-color:white;box-shadow:10px 10px 10px white;display: none;" id="anime_div_result">
+                       <h2 id="result"></h2>
+        </div>
+
+
+
+<script type="text/javascript">
+var score=0; 
+
+function anime_question_1(){
+
+            if(document.getElementById("OPT2_Q1").checked==true){
+                 swal("Congratulations","Correct Answer","success")
+                 score=score+1
+            }
+            else {
+                swal("Wrong","Hopefully you get the next one right","error")
+               
+            }
+            document.getElementById("anime_div_1").style.display="none"
+            document.getElementById("anime_div_2").style.display="block"
+}
+
+function anime_question_2(){
+
+            if(document.getElementById("OPT3_Q2").checked==true){
+                 swal("Congratulations","Correct Answer","success")
+                 score=score+1
+            }
+
+            else{
+                swal("Wrong","Hopefully you get the next one right","error")
+                
+            }
+            document.getElementById("anime_div_1").style.display="none"
+            document.getElementById("anime_div_2").style.display="none"
+            document.getElementById("anime_div_3").style.display="block"
+}
+function anime_question_3(){
+
+            if(document.getElementById("OPT1_Q3").checked==true){
+                 swal("Congratulations","Correct Answer","success")
+                 score=score+1
+            }
+
+            else{
+                swal("Wrong","Hopefully you get the next one right","error")
+               
+            }
+            document.getElementById("anime_div_1").style.display="none"
+            document.getElementById("anime_div_2").style.display="none"
+            document.getElementById("anime_div_3").style.display="none"
+            document.getElementById("anime_div_4").style.display="block"
+}
+function anime_question_4(){
+
+            if(document.getElementById("OPT1_Q4").checked==true){
+                    swal("Congratulations","Correct Answer","success")
+                    score=score+1
+            }
+
+            else{
+                swal("Wrong","Hopefully you get the next one right","error")
+
+            }
+            document.getElementById("anime_div_1").style.display="none"
+            document.getElementById("anime_div_2").style.display="none"
+            document.getElementById("anime_div_3").style.display="none"
+            document.getElementById("anime_div_4").style.display="none"
+            document.getElementById("anime_div_5").style.display="block"
+
+            
+            }
+
+function anime_question_5(){
+
+if(document.getElementById("OPT2_Q5").checked==true){
+        swal("Congratulations","Hopefully you enjoyed this quiz","success")
+        score=score+1
+}
+
+else{
+    swal("Wrong","But hopefully you enjoyed this quiz","error")
+
+}
+document.getElementById("anime_div_1").style.display="none"
+document.getElementById("anime_div_2").style.display="none"
+document.getElementById("anime_div_3").style.display="none"
+document.getElementById("anime_div_4").style.display="none"
+document.getElementById("anime_div_5").style.display="none"
+// document.getElementById("anime_div_result").style.display="block"
+
+// if (score==5){
+//                 document.getElementById("result").innerHTML="Your score is 5 out of 5 <br><br> You are one of the few people who really love anime";
+//             }
+//             else if (score==4)
+//             {
+//                 document.getElementById("result").innerHTML="Your score is 4 out of 5 <br><br> You have great knowledge of anime"
+//             }
+//             else if (score==3)
+//             {
+//                 document.getElementById("result").innerHTML="Your score is 3 out of 5 <br><br> You did pretty well"
+//             }
+//             else if (score==2)
+//             {
+//                 document.getElementById("result").innerHTML="Your score is 2 out of 5 <br><br> You could have done better"
+//             }
+//             else if (score==1)
+//             {
+//                 document.getElementById("result").innerHTML="Your score is 1 out of 5 <br><br> You better sharpen up those anime facts"
+//             }
+//             else if (score==0){
+//                 document.getElementById("result").innerHTML="Your score is 0 out of 5 <br><br> You do not watch much anime"}
+
+}
+
+
+
+</script>    
+</body>
+</html>
