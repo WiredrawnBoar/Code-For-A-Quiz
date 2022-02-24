@@ -2,7 +2,8 @@
 edit and make your own quiz based of my already prewritten code
 
 •If you want to make any changes to particuluar peices of code but do not know 
-how then you can contact me via my email address located in my profile
+how then you can contact me via my email address located in my profile or send your
+changes via the issues tab
 
 •I make reguluar updates on this quiz and post new versions with improvements
 every so often so check out the wiki tab and it will tell you which files are which version
