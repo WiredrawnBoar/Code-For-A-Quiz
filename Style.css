@@ -1,7 +1,0 @@
-#anime_div_1 {
-    border:2px solid black;padding:30px; width:65%;border-radius:20px;background-color:white;box-shadow:10px 10px 10px white;
-}
-
-#anime_div_2,#anime_div_3,#anime_div_4,#anime_div_5,#anime_div_result{
-    border:2px solid black;padding:30px; width:65%;border-radius:20px;background-color:white;box-shadow:10px 10px 10px white;display: none;
-}
