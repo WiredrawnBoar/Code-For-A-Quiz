@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Code For Quiz</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.11.0/sweetalert2.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.11.0/sweetalert2.all.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <div id="div_1">
+    <form>
+    <h2>
+    Question 1
+    </h2>
+    <input type="radio" name="Q1" id="OPT1_Q1"> If you click this it will be Wrong<br>
+    <input type="radio"name="Q1" id="OPT2_Q1"> If you click this it will be Correct<br>
+    <input type="radio"name="Q1" id="OPT3_Q1"> If you click this it will be Wrong<br>
+    </form>
+    <button id="button" onclick="question_1()">Submit</button>
+    </div>
+
+    <div id="div_2">
+        <form>
+        <h2>
+        Question 2
+        </h2>
+        <input type="radio" name="Q2" id="OPT1_Q2"> If you click this it will be Wrong<br>
+        <input type="radio"name="Q2" id="OPT2_Q2"> If you click this it will be Wrong<br>
+        <input type="radio"name="Q2" id="OPT3_Q2"> If you click this it will be Correct<br>
+        </form>
+        <button id="button" onclick="question_2()">Submit</button>
+        </div>
+
+    <div id="div_3">
+            <form>
+            <h2>
+            Question 3
+            </h2>
+            <input type="radio" name="Q3" id="OPT1_Q3"> If you click this it will be Correct<br>
+            <input type="radio"name="Q3" id="OPT2_Q3"> If you click this it will be Wrong<br>
+            <input type="radio"name="Q3" id="OPT3_Q3"> If you click this it will be Wrong<br>
+            </form>
+            <button  id="button" onclick="question_3()">Submit</button>
+        </div>
+        <div id="div_4">                
+                <form>
+                    <h2>
+                    Question 4
+                    </h2>
+                    <input type="radio" name="Q4" id="OPT1_Q4"> If you click this it will be Correct<br>
+                    <input type="radio"name="Q4" id="OPT2_Q4"> If you click this it will be Wrong<br>
+                    <input type="radio"name="Q4" id="OPT3_Q4"> If you click this it will be Wrong<br>
+                    </form>
+                    <button  id="button" onclick="question_4()">Submit</button>
+        </div>
+
+        <div id="div_5">                
+            <form>
+                <h2>
+                Question 5
+                </h2>
+                <input type="radio" name="Q5" id="OPT1_Q5"> If you click this it will be Wrong<br>
+                <input type="radio"name="Q5" id="OPT2_Q5"> If you click this it will be Correct<br>
+                <input type="radio"name="Q5" id="OPT3_Q5"> If you click this it will be Wrong<br>
+                </form>
+                <button  id="button" onclick="question_5()">Submit</button>
+        </div>
+
+        <div id="div_result">
+                       <h2 id="result"></h2>
+        </div>
+
+
+
+<script src="script.js"></script>    
+</body>
+</html>
